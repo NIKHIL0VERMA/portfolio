@@ -37,12 +37,14 @@ export const projectsData = [
       'A production-ready digital queue management system for restaurants with real-time waitlists, automated notifications, admin dashboards, and a RAG-powered assistant for operational insights. Designed for multi-restaurant scalability.',
     technologies: [
       'Next.js',
+      'ExpressJs',
       'TypeScript',
       'Node.js',
       'PostgreSQL',
       'Prisma',
       'RAG',
       'Tailwind',
+      'Web',
     ],
     links: {
       preview: 'https://dine-line.vercel.app',
@@ -54,7 +56,15 @@ export const projectsData = [
     title: 'Growthackr – Productivity Chrome Extension',
     description:
       'A Chrome extension to track and limit time spent on distracting websites, featuring configurable limits, UI dashboard, and performance-focused architecture.',
-    technologies: ['TypeScript', 'SolidJS', 'Chrome Extension APIs', 'Vite'],
+    technologies: [
+      'TypeScript',
+      'Node.js',
+      'SolidJS',
+      'Chrome Extension APIs',
+      'Open Source',
+      'Jest',
+      'Vite',
+    ],
     links: {
       preview: 'https://nikhil0verma.github.io/Growthackr/',
       productHunt: 'https://www.producthunt.com/products/growthackr',
@@ -68,7 +78,15 @@ export const projectsData = [
     title: 'FlixSrota Player – Cross-Platform Video Player (NPM)',
     description:
       'An open-source, customizable video player published on NPM with support for React, React Native, and Expo. Designed for extensibility and clean API consumption.',
-    technologies: ['TypeScript', 'React', 'React Native', 'Expo', 'NPM'],
+    technologies: [
+      'NPM package',
+      'Open Source',
+      'TypeScript',
+      'Node.js',
+      'React',
+      'React Native',
+      'Expo',
+    ],
     links: {
       npm: 'https://www.npmjs.com/package/@flixsrota/player',
       github: 'https://github.com/NIKHIL0VERMA/flixsrota-player',
@@ -78,18 +96,24 @@ export const projectsData = [
 
   {
     image: '/images/project-growthackr.png',
-    title: 'Mynirdeshak – Automated Report Generation Platform',
+    title: 'Mynirdeshak – Scholarship assessment platform',
     description:
-      'A full-stack platform for automated report generation with secure REST APIs, async background workers for PDF creation, Redis-based job queues, and payment integration. Designed, deployed, and maintained production infrastructure.',
+      'A full-stack scholarship assessment platform featuring randomized MCQs, anti-cheating monitoring, and secure REST APIs. Built robust backend workflows with async job queues using Bull MQ for scorecard creation, and integrated payments. Led the system design, deployment, and reliable production operations throughout my internship.',
     technologies: [
       'React',
+      'ExpressJs',
       'TypeScript',
       'Node.js',
       'MongoDB',
       'Redis',
+      'Firebase',
+      'Bull MQ',
       'Docker',
       'Nginx',
+      'Mongoose',
+      'Cloudflare',
       'Payments',
+      'Web',
     ],
     links: {
       preview: 'https://mynirdeshak.com',
@@ -105,11 +129,19 @@ export const projectsData = [
       'An ed-tech platform with structured video learning, user progress tracking, and scalable backend services. Contributed across backend APIs, frontend integration, deployment, and production maintenance.',
     technologies: [
       'React',
+      'ExpressJs',
       'TypeScript',
       'Node.js',
       'MongoDB',
+      'Redis',
+      'Firebase',
+      'Bull MQ',
       'Docker',
-      'Tailwind',
+      'Nginx',
+      'Mongoose',
+      'Cloudflare',
+      'Payments',
+      'Web',
     ],
     links: {
       preview: 'https://learnocept.in',
@@ -120,8 +152,8 @@ export const projectsData = [
     image: '/images/project-growthackr.png',
     title: 'RupeeFunda – Financial Services Website',
     description:
-      'A production financial services website where I handled cloud deployment, reverse proxy setup, CDN configuration, and long-term maintenance ensuring performance and uptime.',
-    technologies: ['Next.js', 'Docker', 'Nginx', 'Cloudflare'],
+      'A production financial services website where I handled cloud deployment, reverse proxy setup, CDN configuration, and long-term maintenance ensuring performance and uptime throughout my internship.',
+    technologies: ['React', 'Docker', 'Nginx', 'Cloudflare', 'Web'],
     links: {
       preview: 'https://rupeefunda.com',
     },
@@ -129,10 +161,17 @@ export const projectsData = [
 
   {
     image: '/images/project-growthackr.png',
-    title: 'PokVort – Pokémon Data Explorer',
+    title: 'PokVort – Game automation',
     description:
-      'A frontend-focused application consuming public APIs to explore Pokémon data with optimized fetching, state handling, and clean UI abstractions.',
-    technologies: ['React', 'JavaScript', 'Public APIs', 'CSS'],
+      'It automates the training process of Pokémon on Pokémon Vortex, streamlining the process of gaining experience or completing battles against a chosen training account. PokVort provides a headless, self-contained package with its own browser (Firefox) and WebDriver, so you do not need to install Firefox or GeckoDriver separately.',
+    technologies: [
+      'Python',
+      'Selenium',
+      'Pickle',
+      'Psutil',
+      'Window App',
+      'Automation',
+    ],
     links: {
       github: 'https://github.com/NIKHIL0VERMA/PokVort',
       vscode: 'https://github.dev/NIKHIL0VERMA/PokVort',
@@ -143,8 +182,19 @@ export const projectsData = [
     image: '/images/project-dineline.png',
     title: 'Machine Monitoring Dashboard',
     description:
-      'A real-time monitoring dashboard for industrial machine data, focusing on visualization, metrics tracking, and system health indicators.',
-    technologies: ['JavaScript', 'Charts', 'Dashboards'],
+      'Scitech Industries – SDE Intern Assessment project. A real-time Machine Monitoring Dashboard built with a Next.js frontend, a NestJS backend, and a worker service for data updates. Focuses on live visualization of industrial data streams, comprehensive metrics tracking, and reliability.',
+    technologies: [
+      'Nest.js',
+      'Next.js',
+      'Socker.io',
+      'TypeScript',
+      'Jest',
+      'prisma',
+      'Node.js',
+      'Charts',
+      'Tailwind',
+      'Web',
+    ],
     links: {
       github: 'https://github.com/NIKHIL0VERMA/Machine-Monitoring-Dashboard',
       vscode: 'https://github.dev/NIKHIL0VERMA/Machine-Monitoring-Dashboard',
@@ -180,7 +230,7 @@ export const projectsData = [
     title: 'The Bakeryshop – Static Business Website',
     description:
       'A static bakery site, implement object click detection using pure css(no JavaScript)',
-    technologies: ['HTML', 'CSS', 'Responsive Design'],
+    technologies: ['HTML', 'CSS', 'Web'],
     links: {
       preview: 'https://thebakeryshop1.netlify.app/',
       github: 'https://github.com/NIKHIL0VERMA/TheBakeryshop',
@@ -191,12 +241,39 @@ export const projectsData = [
 
 export const experiencesData = [
   {
-    title: 'Full-Stack Developer Intern',
-    company: 'DigiMoga Re-innovation LLP',
+    title: 'SDE Intern (Remote)',
+    company: 'PerceptEye Inc.',
     description: (
       <>
-        Designed, developed, deployed, and maintained multiple production
-        platforms -{' '}
+        Designed and implemented an algorithm to generate{' '}
+        <strong>93 million</strong> unique, human-readable simulation names,
+        eliminating manual input and improving AI training workflow
+        traceability. Identified a security vulnerability caused by an unsecured
+        Redis connection and implemented TLS-based secure communication between
+        backend services, <strong>mitigating MITM risks</strong>. Fixed theme
+        inconsistency and improved responsiveness by making dashboard components
+        fully mobile-friendly.
+      </>
+    ),
+    period: 'Jan 2026 – Jan 2026',
+    technologies: [
+      'React',
+      'TypeScript',
+      'MongoDB',
+      'Redis',
+      'Tailwind',
+      'REST APIs',
+      'TLS',
+      'Security',
+    ],
+  },
+  {
+    title: 'Fullstack Developer Intern (Hybrid)',
+    company: 'Digimoga Re-innovations LLP',
+    description: (
+      <>
+        Architected, developed, and deployed full-stack production platforms
+        including{' '}
         <Link
           className={cn(
             buttonVariants({ variant: 'link' }),
@@ -243,7 +320,7 @@ export const experiencesData = [
         features, user progress tracking, and platform scalability.
       </>
     ),
-    period: 'May 2024 – Jul 2024',
+    period: 'Mar 2025 – Jul 2025',
     technologies: [
       'React',
       'TypeScript',
