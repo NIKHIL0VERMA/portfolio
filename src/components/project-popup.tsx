@@ -23,14 +23,14 @@ export const ProjectPopup = (project: ProjectData) => {
           role="button"
           tabIndex={0}
           aria-label={`Open links for ${title}`}
-          className="group relative cursor-pointer overflow-hidden rounded"
+          className="group relative flex cursor-pointer justify-center overflow-hidden rounded"
         >
           <Image
             src={image}
             alt={title}
             height={390}
             width={600}
-            className="rounded transition-transform group-hover:scale-105"
+            className="rounded object-cover object-center transition-transform group-hover:scale-105"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
             <span className="bg-background rounded-full px-3 py-1 text-sm">
