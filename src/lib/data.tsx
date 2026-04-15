@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { ProjectData } from './types';
+import { FAQ, ProfileBio, ProjectData } from './types';
 
 import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
@@ -29,16 +29,52 @@ export const links = [
   },
 ] as const;
 
+export const profile: ProfileBio = {
+  summary:
+    'AI & ML Software Engineer specialize in RAG systems and high-performance applications.',
+  detailed:
+    'Final year BTech student in Computer Science (AI&ML) with a published research paper (IJCSE-2026-7264) and over 6 years of experience as a Google Play Store publisher (RUNN). Passionate about building high-impact software solutions and specialized in LLM evaluation, RAG architectures, and cross-platform development.',
+  credentials: [
+    'BTech in CSE (AI&ML) - Expected Jun 2026',
+    'Research Paper: IJCSE-2026-7264',
+    'Google Play Store Publisher (RUNN) Since 2020',
+  ],
+};
+
+export const faqs: FAQ[] = [
+  {
+    question: "What is Nikhil's technical specialty?",
+    answer:
+      'Nikhil specializes in AI & ML engineering, specifically Retrieval-Augmented Generation (RAG) systems, LLM confidence calibration, and building high-performance full-stack applications with Next.js and Node.js.',
+  },
+  {
+    question: 'How much experience does Nikhil have in app publishing?',
+    answer:
+      "Nikhil has over 6 years of experience publishing and maintaining apps and games on the Google Play Store under the handle 'RUNN', demonstrating long-term commitment to software deployment and user maintenance.",
+  },
+  {
+    question: 'Has Nikhil published any research?',
+    answer:
+      'Yes, Nikhil is a published researcher with a paper in the International Journal of Computer Sciences and Engineering (IJCSE), Paper ID: IJCSE-2026-7264, focusing on computer science and specialized AI topics.',
+  },
+  {
+    question: "What is Nikhil's educational background?",
+    answer:
+      'Nikhil is currently a final-year BTech student in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning (AI & ML), graduating in June 2026.',
+  },
+];
+
 export const projectsData = [
   {
-    image: '/images/project-llm-confidence-calibration-benchmark.png',
+    image: '/images/project-llm-confidence-calibration-benchmark.webp',
     title: 'LLM Confidence Calibration Benchmark',
     description:
-      'To analyze whether modern open-source LLMs are well-calibrated, and how calibration varies across different task types such as reasoning, common sense, binary decision making, and factual truthfulness.',
+      'Developed a comprehensive evaluation framework to analyze whether modern open-source LLMs are well-calibrated. Analyzed calibration variance across reasoning, common sense, and factual truthfulness, providing actionable insights for model reliability.',
     technologies: [
       'Python',
       'HuggingFace',
       'Transformers',
+      'LLM Evaluation',
       'Seaborn',
       'Jupyter Notebook',
       'Matplotlib',
@@ -54,7 +90,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-dineline.png',
+    image: '/images/project-dineline.webp',
     title: 'DineLine – Digital Queue Management Platform',
     description:
       'A production-ready digital queue management system for restaurants with real-time waitlists, automated notifications, admin dashboards, and a RAG-powered assistant for operational insights. Designed for multi-restaurant scalability.',
@@ -74,7 +110,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-flixsrota-player.png',
+    image: '/images/project-flixsrota-player.webp',
     title: 'FlixSrota Player – Cross-Platform Video Player (NPM)',
     description:
       'An open-source, customizable video player published on NPM with support for React, React Native, and Expo. Designed for extensibility and clean API consumption.',
@@ -94,7 +130,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-growthackr.png',
+    image: '/images/project-growthackr.webp',
     title: 'Growthackr – Productivity Chrome Extension',
     description:
       'A Chrome extension to track and limit time spent on distracting websites, featuring configurable limits, UI dashboard, and performance-focused architecture.',
@@ -116,7 +152,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-darshan-doot.png',
+    image: '/images/project-darshan-doot.webp',
     title: 'Darshan Doot',
     description:
       'Darshan Doot is an innovative multilingual chatbot-based ticketing system designed to enhance the visitor experience in museums by streamlining the ticket booking process. Recognizing the challenges traditional manual ticketing systems pose—such as long queues, inefficient operations, and human errors—our solution leverages advanced technology to create a seamless, efficient, and user-friendly platform.',
@@ -136,7 +172,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-learnocept.png',
+    image: '/images/project-learnocept.webp',
     title: 'Learnocept – Video-Based Learning Platform',
     description:
       'An ed-tech platform with structured video learning, user progress tracking, and scalable backend services. Contributed across backend APIs, frontend integration, deployment, and production maintenance.',
@@ -161,7 +197,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-mynirdeshak.png',
+    image: '/images/project-mynirdeshak.webp',
     title: 'Mynirdeshak – Scholarship assessment platform',
     description:
       'A full-stack scholarship assessment platform featuring randomized MCQs, anti-cheating monitoring, and secure REST APIs. Built robust backend workflows with async job queues using Bull MQ for scorecard creation, and integrated payments. Led the system design, deployment, and reliable production operations throughout my internship.',
@@ -188,7 +224,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-pick-palette.png',
+    image: '/images/project-pick-palette.webp',
     title: 'Pick Palette – Color Picker Chrome Extension',
     description:
       'A Chrome extension improving designer productivity by extracting and managing color palettes directly from webpages. Featured on Product Hunt via an open-source product.',
@@ -200,7 +236,7 @@ export const projectsData = [
   },
 
   {
-    image: '/images/project-criteria-engine.png',
+    image: '/images/project-criteria-engine.webp',
     title: 'Criteria Engine',
     description:
       'A dynamic rule-based eligibility determination application using FastAPI and MongoDB. It leverages an Abstract Syntax Tree (AST) for flexible rule creation, combination, and evaluation based on user attributes. The application features a Next.js frontend for rule management and evaluation, providing a robust framework for eligibility assessment.',
@@ -219,7 +255,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-pokvort.png',
+    image: '/images/project-pokvort.webp',
     title: 'PokVort – Game automation',
     description:
       'It automates the training process of Pokémon on Pokémon Vortex, streamlining the process of gaining experience or completing battles against a chosen training account. PokVort provides a headless, self-contained package with its own browser (Firefox) and WebDriver, so you do not need to install Firefox or GeckoDriver separately.',
@@ -237,7 +273,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-no-ui.png',
+    image: '/images/project-no-ui.webp',
     title: 'SchedulerForInstagram',
     description:
       'An automation for scheduling post for instagram using selenium, webbot, AutoIT',
@@ -248,7 +284,7 @@ export const projectsData = [
     },
   },
   {
-    image: '/images/project-machine-dashboard-intern-assessment.png',
+    image: '/images/project-machine-dashboard-intern-assessment.webp',
     title: 'Machine Monitoring Dashboard',
     description:
       'Scitech Industries – SDE Intern Assessment project. A real-time Machine Monitoring Dashboard built with a Next.js frontend, a NestJS backend, and a worker service for data updates. Focuses on live visualization of industrial data streams, comprehensive metrics tracking, and reliability.',
@@ -271,7 +307,7 @@ export const projectsData = [
   },
 
   {
-    image: '/images/project-no-ui.png',
+    image: '/images/project-no-ui.webp',
     title: 'Face Detection System',
     description:
       'A real-time face detection system using OpenCV with webcam integration, dataset handling, and ML-based recognition pipeline.',
@@ -281,9 +317,8 @@ export const projectsData = [
       vscode: 'https://github.dev/NIKHIL0VERMA/face-detection',
     },
   },
-
   {
-    image: '/images/project-bakery.png',
+    image: '/images/project-bakery.webp',
     title: 'The Bakeryshop – Static Business Website',
     description:
       'A static bakery site, implement object click detection using pure css(no JavaScript)',

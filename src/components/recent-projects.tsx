@@ -39,8 +39,8 @@ export const RecentProjects = () => {
         />
       </motion.div>
       <div className="grid gap-7 md:grid-cols-2">
-        {projectsData.slice(0, 2).map((project, index) => (
-          <Project key={project.title} project={project} index={index} />
+        {projectsData.slice(0, 2).map((project) => (
+          <Project key={project.title} project={project} />
         ))}
       </div>
       <motion.div

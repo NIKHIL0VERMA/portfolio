@@ -15,3 +15,14 @@ type AtLeastOne<T> = {
 }[keyof T];
 
 export type ProjectLinkName = keyof typeof projectLinks;
+
+export type FAQ = {
+  question: string;
+  answer: string;
+};
+
+export type ProfileBio = {
+  summary: string;
+  detailed: string;
+  credentials: string[];
+};

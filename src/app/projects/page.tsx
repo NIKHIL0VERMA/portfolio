@@ -5,7 +5,6 @@ import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 
 import { buttonVariants } from '@/components/button';
-import { Contact } from '@/components/contact';
 import { Footer } from '@/components/footer';
 import { Projects } from '@/components/projects';
 import { Sidebar } from '@/components/sidebar';
@@ -49,7 +48,6 @@ const ProjectsPage = () => {
             <Projects />
           </motion.div>
 
-          <Contact />
           <Footer />
         </div>
       </div>
