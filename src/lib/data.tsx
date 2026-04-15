@@ -31,6 +31,29 @@ export const links = [
 
 export const projectsData = [
   {
+    image: '/images/project-llm-confidence-calibration-benchmark.png',
+    title: 'LLM Confidence Calibration Benchmark',
+    description:
+      'To analyze whether modern open-source LLMs are well-calibrated, and how calibration varies across different task types such as reasoning, common sense, binary decision making, and factual truthfulness.',
+    technologies: [
+      'Python',
+      'HuggingFace',
+      'Transformers',
+      'Seaborn',
+      'Jupyter Notebook',
+      'Matplotlib',
+      'Open Source',
+    ],
+    links: {
+      preview:
+        'https://medium.com/@nikhil2003verma/are-open-source-llms-as-confident-as-they-claim-cb177c4b96f2',
+      github:
+        'https://github.com/NIKHIL0VERMA/LLM-Confidence-Calibration-Benchmark',
+      vscode:
+        'https://github.dev/NIKHIL0VERMA/LLM-Confidence-Calibration-Benchmark',
+    },
+  },
+  {
     image: '/images/project-dineline.png',
     title: 'DineLine – Digital Queue Management Platform',
     description:
@@ -50,31 +73,8 @@ export const projectsData = [
       preview: 'https://dine-line.vercel.app',
     },
   },
-
   {
-    image: '/images/project-growthackr.png',
-    title: 'Growthackr – Productivity Chrome Extension',
-    description:
-      'A Chrome extension to track and limit time spent on distracting websites, featuring configurable limits, UI dashboard, and performance-focused architecture.',
-    technologies: [
-      'TypeScript',
-      'Node.js',
-      'SolidJS',
-      'Chrome Extension APIs',
-      'Open Source',
-      'Jest',
-      'Vite',
-    ],
-    links: {
-      preview: 'https://nikhil0verma.github.io/Growthackr/',
-      productHunt: 'https://www.producthunt.com/products/growthackr',
-      github: 'https://github.com/NIKHIL0VERMA/Growthackr',
-      vscode: 'https://github.dev/NIKHIL0VERMA/Growthackr',
-    },
-  },
-
-  {
-    image: '/images/project-dineline.png',
+    image: '/images/project-flixsrota-player.png',
     title: 'FlixSrota Player – Cross-Platform Video Player (NPM)',
     description:
       'An open-source, customizable video player published on NPM with support for React, React Native, and Expo. Designed for extensibility and clean API consumption.',
@@ -93,37 +93,50 @@ export const projectsData = [
       vscode: 'https://github.dev/NIKHIL0VERMA/flixsrota-player',
     },
   },
-
   {
     image: '/images/project-growthackr.png',
-    title: 'Mynirdeshak – Scholarship assessment platform',
+    title: 'Growthackr – Productivity Chrome Extension',
     description:
-      'A full-stack scholarship assessment platform featuring randomized MCQs, anti-cheating monitoring, and secure REST APIs. Built robust backend workflows with async job queues using Bull MQ for scorecard creation, and integrated payments. Led the system design, deployment, and reliable production operations throughout my internship.',
+      'A Chrome extension to track and limit time spent on distracting websites, featuring configurable limits, UI dashboard, and performance-focused architecture.',
     technologies: [
-      'React',
-      'ExpressJs',
       'TypeScript',
       'Node.js',
-      'MongoDB',
+      'SolidJS',
+      'Chrome Extension APIs',
+      'Open Source',
+      'Jest',
+      'Vite',
+      'web',
+    ],
+    links: {
+      preview: 'https://nikhil0verma.github.io/Growthackr/',
+      productHunt: 'https://www.producthunt.com/products/growthackr',
+      github: 'https://github.com/NIKHIL0VERMA/Growthackr',
+      vscode: 'https://github.dev/NIKHIL0VERMA/Growthackr',
+    },
+  },
+  {
+    image: '/images/project-darshan-doot.png',
+    title: 'Darshan Doot',
+    description:
+      'Darshan Doot is an innovative multilingual chatbot-based ticketing system designed to enhance the visitor experience in museums by streamlining the ticket booking process. Recognizing the challenges traditional manual ticketing systems pose—such as long queues, inefficient operations, and human errors—our solution leverages advanced technology to create a seamless, efficient, and user-friendly platform.',
+    technologies: [
+      'Python',
+      'Django',
+      'Payments',
+      'PostgreSQL',
       'Redis',
-      'Firebase',
-      'Bull MQ',
       'Docker',
       'Nginx',
-      'Mongoose',
-      'Cloudflare',
-      'Payments',
       'Web',
     ],
     links: {
-      preview: 'https://mynirdeshak.com',
-      github: 'https://github.com/Anup-raj2002/mynirdeshak',
-      vscode: 'https://github.dev/Anup-raj2002/mynirdeshak',
+      github: 'https://github.com/NIKHIL0VERMA/Darshan_Doot',
+      vscode: 'https://github.dev/NIKHIL0VERMA/Darshan_Doot',
     },
   },
-
   {
-    image: '/images/project-dineline.png',
+    image: '/images/project-learnocept.png',
     title: 'Learnocept – Video-Based Learning Platform',
     description:
       'An ed-tech platform with structured video learning, user progress tracking, and scalable backend services. Contributed across backend APIs, frontend integration, deployment, and production maintenance.',
@@ -147,20 +160,66 @@ export const projectsData = [
       preview: 'https://learnocept.in',
     },
   },
-
   {
-    image: '/images/project-growthackr.png',
-    title: 'RupeeFunda – Financial Services Website',
+    image: '/images/project-mynirdeshak.png',
+    title: 'Mynirdeshak – Scholarship assessment platform',
     description:
-      'A production financial services website where I handled cloud deployment, reverse proxy setup, CDN configuration, and long-term maintenance ensuring performance and uptime throughout my internship.',
-    technologies: ['React', 'Docker', 'Nginx', 'Cloudflare', 'Web'],
+      'A full-stack scholarship assessment platform featuring randomized MCQs, anti-cheating monitoring, and secure REST APIs. Built robust backend workflows with async job queues using Bull MQ for scorecard creation, and integrated payments. Led the system design, deployment, and reliable production operations throughout my internship.',
+    technologies: [
+      'React',
+      'ExpressJs',
+      'TypeScript',
+      'Node.js',
+      'MongoDB',
+      'Redis',
+      'Firebase',
+      'Bull MQ',
+      'Docker',
+      'Nginx',
+      'Mongoose',
+      'Cloudflare',
+      'Payments',
+      'Web',
+    ],
     links: {
-      preview: 'https://rupeefunda.com',
+      preview: 'https://mynirdeshak.com',
+      github: 'https://github.com/Anup-raj2001/mynirdeshak',
+      vscode: 'https://github.dev/Anup-raj2001/mynirdeshak',
+    },
+  },
+  {
+    image: '/images/project-pick-palette.png',
+    title: 'Pick Palette – Color Picker Chrome Extension',
+    description:
+      'A Chrome extension improving designer productivity by extracting and managing color palettes directly from webpages. Featured on Product Hunt via an open-source product.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension APIs'],
+    links: {
+      github: 'https://github.com/NIKHIL0VERMA/PickPalette-ChromeExtension',
+      vscode: 'https://github.dev/NIKHIL0VERMA/PickPalette-ChromeExtension',
     },
   },
 
   {
-    image: '/images/project-growthackr.png',
+    image: '/images/project-criteria-engine.png',
+    title: 'Criteria Engine',
+    description:
+      'A dynamic rule-based eligibility determination application using FastAPI and MongoDB. It leverages an Abstract Syntax Tree (AST) for flexible rule creation, combination, and evaluation based on user attributes. The application features a Next.js frontend for rule management and evaluation, providing a robust framework for eligibility assessment.',
+    technologies: [
+      'Python',
+      'FastAPI',
+      'MongoDB',
+      'Next.js',
+      'TypeScript',
+      'Tailwind',
+      'AST',
+    ],
+    links: {
+      github: 'https://github.com/NIKHIL0VERMA/CriteriaEngine',
+      vscode: 'https://github.dev/NIKHIL0VERMA/CriteriaEngine',
+    },
+  },
+  {
+    image: '/images/project-pokvort.png',
     title: 'PokVort – Game automation',
     description:
       'It automates the training process of Pokémon on Pokémon Vortex, streamlining the process of gaining experience or completing battles against a chosen training account. PokVort provides a headless, self-contained package with its own browser (Firefox) and WebDriver, so you do not need to install Firefox or GeckoDriver separately.',
@@ -177,9 +236,19 @@ export const projectsData = [
       vscode: 'https://github.dev/NIKHIL0VERMA/PokVort',
     },
   },
-
   {
-    image: '/images/project-dineline.png',
+    image: '/images/project-no-ui.png',
+    title: 'SchedulerForInstagram',
+    description:
+      'An automation for scheduling post for instagram using selenium, webbot, AutoIT',
+    technologies: ['Python', 'Selenium', 'webbot', 'AutoIT'],
+    links: {
+      github: 'https://github.com/NIKHIL0VERMA/SchedulerForInstagram',
+      vscode: 'https://github.dev/NIKHIL0VERMA/SchedulerForInstagram',
+    },
+  },
+  {
+    image: '/images/project-machine-dashboard-intern-assessment.png',
     title: 'Machine Monitoring Dashboard',
     description:
       'Scitech Industries – SDE Intern Assessment project. A real-time Machine Monitoring Dashboard built with a Next.js frontend, a NestJS backend, and a worker service for data updates. Focuses on live visualization of industrial data streams, comprehensive metrics tracking, and reliability.',
@@ -202,20 +271,8 @@ export const projectsData = [
   },
 
   {
-    image: '/images/project-dineline.png',
-    title: 'Pick Palette – Color Picker Chrome Extension',
-    description:
-      'A Chrome extension improving designer productivity by extracting and managing color palettes directly from webpages. Featured on Product Hunt via an open-source product.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Chrome Extension APIs'],
-    links: {
-      github: 'https://github.com/NIKHIL0VERMA/Pick-Palette',
-      vscode: 'https://github.dev/NIKHIL0VERMA/Pick-Palette',
-    },
-  },
-
-  {
-    image: '/images/project-growthackr.png',
-    title: 'Face Detection System (Python)',
+    image: '/images/project-no-ui.png',
+    title: 'Face Detection System',
     description:
       'A real-time face detection system using OpenCV with webcam integration, dataset handling, and ML-based recognition pipeline.',
     technologies: ['Python', 'OpenCV', 'Machine Learning'],
@@ -226,7 +283,7 @@ export const projectsData = [
   },
 
   {
-    image: '/images/project-dineline.png',
+    image: '/images/project-bakery.png',
     title: 'The Bakeryshop – Static Business Website',
     description:
       'A static bakery site, implement object click detection using pure css(no JavaScript)',

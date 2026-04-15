@@ -76,10 +76,10 @@ export const SidebarMobile = () => {
               damping: 18,
             }}
             className="
-                dark:bg-background/80 bg-background/20 absolute
-                -bottom-7 -right-7 z-0
-                border
+                absolute -bottom-7 -right-7
+                z-0 border bg-background/20
                 backdrop-blur-sm
+                dark:bg-background/80
             "
           />
         )}
@@ -109,7 +109,7 @@ export const SidebarMobile = () => {
                   href={link}
                   target="_blank"
                   key={link}
-                  className="text-muted-foreground hover:text-foreground relative flex items-center justify-center rounded-full p-2 text-sm transition-all"
+                  className="relative flex items-center justify-center rounded-full p-2 text-sm text-muted-foreground transition-all hover:text-foreground"
                 >
                   {icon}
                 </Link>
