@@ -29,8 +29,8 @@ export const Experience = () => {
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
             >
-              <div className="bg-muted absolute left-0 top-2.5 h-full w-[2px] group-first:top-6 group-first:h-[calc(100%-24px)]">
-                <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
+              <div className="absolute left-0 top-2.5 h-full w-[2px] bg-muted group-first:top-6 group-first:h-[calc(100%-24px)]">
+                <div className="absolute left-[-5px] top-0 size-3 rounded-full border-2 border-primary bg-background" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 100 }}

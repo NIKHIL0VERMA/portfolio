@@ -33,7 +33,7 @@ export const ProjectPopup = (project: ProjectData) => {
             className="rounded object-cover object-center transition-transform group-hover:scale-105"
           />
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
-            <span className="bg-background rounded-full px-3 py-1 text-sm">
+            <span className="rounded-full bg-background px-3 py-1 text-sm">
               View links
             </span>
           </div>
@@ -57,7 +57,7 @@ export const ProjectPopup = (project: ProjectData) => {
             {title}
           </DialogTitle>
         </DialogHeader>
-        <nav className="sm:text-muted-foreground sm:flex sm:flex-row sm:items-center sm:gap-4 sm:text-sm">
+        <nav className="sm:flex sm:flex-row sm:items-center sm:gap-4 sm:text-sm sm:text-muted-foreground">
           {Object.entries(links ?? {}).map(([key, url]) => {
             if (!url) return null;
 
@@ -69,7 +69,7 @@ export const ProjectPopup = (project: ProjectData) => {
                 href={url}
                 target="_blank"
                 aria-label={meta.label}
-                className="text-muted-foreground hover:bg-muted hover:text-foreground flex items-center gap-2 rounded-lg p-2 text-sm capitalize transition"
+                className="flex items-center gap-2 rounded-lg p-2 text-sm capitalize text-muted-foreground transition hover:bg-muted hover:text-foreground"
               >
                 {meta.icon}
                 <span className="sm:hidden">{meta.label}</span>

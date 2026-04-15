@@ -39,7 +39,7 @@ export const Intro = () => {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
+        className="max-w-3xl font-heading text-4xl font-extrabold md:text-5xl"
       >
         Crafting{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
@@ -53,7 +53,7 @@ export const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
-        className="text-muted-foreground mt-2 max-w-xl"
+        className="mt-2 max-w-xl text-muted-foreground"
       >
         A generalist based in India. I build solutions across software,
         hardware, and automation without tech stack boundaries.
