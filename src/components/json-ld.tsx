@@ -75,8 +75,7 @@ export const JsonLd = () => {
           description: project.description,
           url:
             project.links?.preview ||
-            project.links?.github ||
-            project.links?.npm,
+            project.links?.github,
           applicationCategory: 'DeveloperApplication',
           operatingSystem: platform,
 

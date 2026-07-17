@@ -3,13 +3,13 @@ import '@/styles/globals.css';
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';
 
-import { ActiveSectionProvider } from '@/components/active-section-provider';
 import { JsonLd } from '@/components/json-ld';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/toaster';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -66,12 +66,11 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     <html data-scroll-behavior="smooth" lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen font-sans', fonts)}>
         <ThemeProvider defaultTheme="dark" attribute="class">
-          <ActiveSectionProvider>
             <JsonLd />
             {children}
             <Toaster position="bottom-left" />
-          </ActiveSectionProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

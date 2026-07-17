@@ -1,41 +1,14 @@
-import Link from 'next/link';
-
 import { FAQ, ProfileBio, ProjectData } from './types';
 
-import { buttonVariants } from '@/components/button';
 import { Icons } from '@/components/icons';
-import { cn } from '@/lib/utils';
-
-export const links = [
-  {
-    name: 'Home',
-    hash: '#home',
-  },
-  {
-    name: 'About',
-    hash: '#about',
-  },
-  {
-    name: 'Experience',
-    hash: '#experience',
-  },
-  {
-    name: 'Projects',
-    hash: '#projects',
-  },
-  {
-    name: 'Contact',
-    hash: '#contact',
-  },
-] as const;
 
 export const profile: ProfileBio = {
   summary:
-    'AI & ML Software Engineer specialize in RAG systems and high-performance applications.',
+    'Full-Stack & Agentic AI Developer specialize in RAG systems and high-performance applications.',
   detailed:
-    'Final year BTech student in Computer Science (AI&ML) with a published research paper (IJCSE-2026-7264) and over 6 years of experience as a Google Play Store publisher (RUNN). Passionate about building high-impact software solutions and specialized in LLM evaluation, RAG architectures, and cross-platform development.',
+    'Full-Stack & Agentic AI Engineer with a published research paper (IJCSE-2026-7264) and over 6 years of experience as a Google Play Store publisher (RUNN). Passionate about building high-impact software solutions and specialized in LLM evaluation, RAG architectures, and cross-platform development.',
   credentials: [
-    'BTech in CSE (AI&ML) - Expected Jun 2026',
+    'BTech in CSE (AI&ML) - Jun 2026',
     'Research Paper: IJCSE-2026-7264',
     'Google Play Store Publisher (RUNN) Since 2020',
   ],
@@ -45,7 +18,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is Nikhil's technical specialty?",
     answer:
-      'Nikhil specializes in AI & ML engineering, specifically Retrieval-Augmented Generation (RAG) systems, LLM confidence calibration, and building high-performance full-stack applications with Next.js and Node.js.',
+      'Nikhil specializes in Full-Stack & Agentic AI engineering, specifically Retrieval-Augmented Generation (RAG) systems, LLM confidence calibration, and building high-performance full-stack applications with Next.js and Node.js.',
   },
   {
     question: 'How much experience does Nikhil have in app publishing?',
@@ -60,7 +33,7 @@ export const faqs: FAQ[] = [
   {
     question: "What is Nikhil's educational background?",
     answer:
-      'Nikhil is currently a final-year BTech student in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning (AI & ML), graduating in June 2026.',
+      'Nikhil is a BTech graduate in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning (AI & ML).',
   },
 ];
 
@@ -107,6 +80,8 @@ export const projectsData = [
     ],
     links: {
       preview: 'https://dine-line.vercel.app',
+      github: 'https://github.com/NIKHIL0VERMA/DineLine',
+      vscode: 'https://github.dev/NIKHIL0VERMA/DineLine',
     },
   },
   {
@@ -124,7 +99,7 @@ export const projectsData = [
       'Expo',
     ],
     links: {
-      npm: 'https://www.npmjs.com/package/@flixsrota/player',
+      preview: 'https://www.npmjs.com/package/@flixsrota/player',
       github: 'https://github.com/NIKHIL0VERMA/flixsrota-player',
       vscode: 'https://github.dev/NIKHIL0VERMA/flixsrota-player',
     },
@@ -218,9 +193,7 @@ export const projectsData = [
       'Web',
     ],
     links: {
-      preview: 'https://mynirdeshak.com',
-      github: 'https://github.com/Anup-raj2001/mynirdeshak',
-      vscode: 'https://github.dev/Anup-raj2001/mynirdeshak',
+      preview: 'https://mynirdeshak.in',
     },
   },
   {
@@ -337,14 +310,11 @@ export const experiencesData = [
     company: 'PerceptEye Inc.',
     description: (
       <>
-        Designed and implemented an algorithm to generate{' '}
-        <strong>93 million</strong> unique, human-readable simulation names,
-        eliminating manual input and improving AI training workflow
-        traceability. Identified a security vulnerability caused by an unsecured
-        Redis connection and implemented TLS-based secure communication between
-        backend services, <strong>mitigating MITM risks</strong>. Fixed theme
-        inconsistency and improved responsiveness by making dashboard components
-        fully mobile-friendly.
+        Designed a combinatorial name-generation algorithm in TypeScript, producing 93M unique human-readable
+        simulation names and eliminating manual workflow naming for enterprise agentic AI training workflows.
+        <br/>
+        Identified an unsecured Redis connection and introduced TLS-based communication between backend
+        services, securing data in transit against man-in-the-middle (MITM) attacks.
       </>
     ),
     period: 'Jan 2026 – Feb 2026',
@@ -396,6 +366,8 @@ export const experiencesData = [
 
 export const skillsData = [
   { icon: <Icons.typescript className="size-12" /> },
+  { icon: <Icons.javascript className="size-12" /> },
+  { icon: <Icons.python className="size-12" /> },
   { icon: <Icons.react className="size-12" /> },
   { icon: <Icons.nextjs className="size-12" /> },
   { icon: <Icons.nodejs className="size-12" /> },
@@ -404,6 +376,14 @@ export const skillsData = [
   { icon: <Icons.prisma className="size-12" /> },
   { icon: <Icons.redis className="size-12" /> },
   { icon: <Icons.docker className="size-12" /> },
+  { icon: <Icons.tailwind className="size-12" /> },
+  { icon: <Icons.express className="size-12" /> },
+  { icon: <Icons.firebase className="size-12" /> },
+  { icon: <Icons.supabase className="size-12" /> },
+  { icon: <Icons.github className="size-12" /> },
+  { icon: <Icons.git className="size-12" /> },
+  { icon: <Icons.godot className="size-12" /> },
+  { icon: <Icons.gemini className="size-12" /> },
 ] as const;
 
 export const profiles = [
@@ -428,15 +408,11 @@ export const profiles = [
 export const projectLinks = {
   preview: {
     icon: <Icons.preview />,
-    label: 'Live Website',
+    label: 'Preview',
   },
   github: {
     icon: <Icons.github />,
     label: 'View on GitHub',
-  },
-  npm: {
-    icon: <Icons.npm />,
-    label: 'View on NPM',
   },
   productHunt: {
     icon: <Icons.productHunt />,

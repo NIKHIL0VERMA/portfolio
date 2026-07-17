@@ -1,6 +1,4 @@
-import { links, projectLinks } from '@/lib/data';
-
-export type SectionName = (typeof links)[number]['name'];
+import { projectLinks } from '@/lib/data';
 
 export type ProjectData = {
   image: string;

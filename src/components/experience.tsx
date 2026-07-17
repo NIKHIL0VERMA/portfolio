@@ -5,16 +5,13 @@ import { motion } from 'framer-motion';
 
 import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
-import { useSectionInView } from '@/hooks/use-section-in-view';
 import { experiencesData } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
 export const Experience = () => {
-  const { ref: sectionRef } = useSectionInView('Experience');
 
   return (
     <section
-      ref={sectionRef}
       id="experience"
       className="my-10 scroll-mt-28 md:mb-20"
     >
