@@ -347,7 +347,7 @@ export const experiencesData = [
         fully mobile-friendly.
       </>
     ),
-    period: 'Jan 2026 – Jan 2026',
+    period: 'Jan 2026 – Feb 2026',
     technologies: [
       'React',
       'TypeScript',
@@ -365,41 +365,7 @@ export const experiencesData = [
     description: (
       <>
         Architected, developed, and deployed full-stack production platforms
-        including{' '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://learnocept.in"
-          target="_blank"
-        >
-          learnocept.in
-        </Link>
-        {', '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://mynirdeshak.com"
-          target="_blank"
-        >
-          mynirdeshak.com
-        </Link>
-        {', and '}
-        <Link
-          className={cn(
-            buttonVariants({ variant: 'link' }),
-            'm-0 h-fit p-0 text-base'
-          )}
-          href="https://rupeefunda.com"
-          target="_blank"
-        >
-          rupeefunda.com
-        </Link>
-        .
-        <br />
+        including Mynirdeshak, Learnocept & RupeeFunda.
         <br />
         At <strong>RupeeFunda</strong>, I handled production deployment, server
         configuration, and ongoing maintenance to ensure reliability and uptime.
@@ -412,7 +378,7 @@ export const experiencesData = [
         features, user progress tracking, and platform scalability.
       </>
     ),
-    period: 'May 2025 – Dec 2025',
+    period: 'Mar 2025 – Dec 2025',
     technologies: [
       'React',
       'TypeScript',
